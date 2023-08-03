@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computation </title>
+	<style type="text/css">
+		h1,h2{
+			text-align: center;
+		}
+		h1{
+			border: solid #063970 3px;
+			color: #eeeee4;
+			background-color: #1e81b0;
+			padding: 25px;
+			text-shadow: 2px 4px #154c79;
+		}
+		h2{
+			color: #1e81b0;
+			background-color: #eeeee4;
+			padding: 50px;
+			text-shadow: 1px 1px #645a56;
+		}
+		div {
+  width: 400px;
+  height: 200px;
+  background: #d3d0cf;
+  transition: width 2.5s;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;
+  animation: example 1.5s infinite alternate;
+}
+		div:hover {
+  width: 1400px;
+}
+@keyframes example {
+  from {background-color: #21130d;}
+  to {background-color: #abdbe3;}
+}
+	</style>
+</head>
+<body><div>
+	<h1>Pytogorean Theorem</h1>
+	<h2 id="A1"></h2>
+	<h1>Area of the square</h1>
+	<h2 id="A2"></h2>
+	<h1>Area of the circle</h1>
+	<h2 id="A3"></h2>
+	<h1>Circumference of a circle</h1>
+	<h2 id="A4"></h2>
+	</div>
+	<script type="text/javascript">
+		//Pytogorean Theorem
+     var num1= 21;
+     var num2= 14;
+     var PO1= Math.pow(num1,2);
+     var PO2= Math.pow(num2,2);
+     var Pytogo= Math.sqrt(PO1 + PO2);
+      document.getElementById("A1").innerHTML = Pytogo;
+       //Area of the sqauare
+     var num3= 14;
+        //14^2
+     var SA= Math.pow(num3,2);
+     document.getElementById("A2").innerHTML = SA;
+
+     //Area of the circle
+     var r= 8;
+     var AC = Math.pow(r,2);
+     var PI = AC * 3.14;
+    
+     document.getElementById("A3").innerHTML = PI;
+      //circumference of a circle
+      var R = 13.5;
+      var C = (2*(R * 3.14))
+      document.getElementById("A4").innerHTML = C;
+
+	</script>
+
+
+</body>
+</html>
